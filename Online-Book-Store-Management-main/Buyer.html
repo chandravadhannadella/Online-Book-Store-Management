@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Login</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Online Book Store Management System</h1>
+                <p class="site-tagline">Buy Book App</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="Home.html" class="nav-link">Home</a></li>
+                <li><a href="Admin.html" class="nav-link">Admin</a></li>
+                <li><a href="Seller.html" class="nav-link">Seller</a></li>
+                <li><a href="Buyer.html" class="nav-link active" aria-current="page">Buyer</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content" role="main">
+        <div class="container container-form">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Buyer Login</h2>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="post" novalidate>
+                        <div class="form-group">
+                            <label for="buyername" class="form-label">Buyer Name <span class="required"></span></label>
+                            <input type="text" 
+                                   id="buyername" 
+                                   name="buyername" 
+                                   class="form-input" 
+                                   placeholder="Enter Buyer Name" 
+                                   required 
+                                   autocomplete="username">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="buyerpassword" class="form-label">Password <span class="required"></span></label>
+                            <input type="password" 
+                                   id="buyerpassword" 
+                                   name="buyerpassword" 
+                                   class="form-input" 
+                                   placeholder="Enter Password" 
+                                   required 
+                                   autocomplete="current-password">
+                        </div>
+                        
+                        <div class="form-group mt-xl">
+                            <button type="submit" class="btn btn-primary btn-block btn-lg">Buyer Login</button>
+                        </div>
+                    </form>
+                    
+                    <p class="text-center mt-lg" style="color: var(--color-gray-600); font-size: var(--font-size-sm);">
+                        If you don't have buyer login details
+                        <a href="buyerregister.html" class="btn btn-ghost btn-sm">Register here</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p>Email: onlinebookstore@gmail.com</p>
+                    <p>Phone: +91 9876543210</p>
+                </div>
+                <p class="footer-copyright">&copy; 2024 Online Book Store Management System. All rights reserved.</p>
+                <p class="footer-credit">Designed and developed by <strong>@AIML-III-VIGNAN</strong></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

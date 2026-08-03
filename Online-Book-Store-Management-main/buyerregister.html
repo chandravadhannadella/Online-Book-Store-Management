@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer Registration Form</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="site-header" role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Online Book Store Management System</h1>
+                <p class="site-tagline">Buy Book App</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="Home.html" class="nav-link">Home</a></li>
+                <li><a href="Admin.html" class="nav-link">Admin</a></li>
+                <li><a href="Seller.html" class="nav-link">Seller</a></li>
+                <li><a href="Buyer.html" class="nav-link">Buyer</a></li>
+                <li><a href="About.html" class="nav-link">About</a></li>
+                <li><a href="Contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content" role="main">
+        <div class="container container-form">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Buyer Registration</h2>
+                </div>
+                <div class="card-body">
+                    <form action="#" method="post" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="buyerid" class="form-label">Buyer ID <span class="required"></span></label>
+                                <input type="text" 
+                                       id="buyerid" 
+                                       name="buyerid" 
+                                       class="form-input" 
+                                       placeholder="Enter Buyer ID" 
+                                       required 
+                                       autocomplete="username">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="fullname" class="form-label">Full Name <span class="required"></span></label>
+                                <input type="text" 
+                                       id="fullname" 
+                                       name="fullname" 
+                                       class="form-input" 
+                                       placeholder="Enter Full Name" 
+                                       required 
+                                       autocomplete="name">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address <span class="required"></span></label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       class="form-input" 
+                                       placeholder="Enter Email Address" 
+                                       required 
+                                       autocomplete="email">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label">Password <span class="required"></span></label>
+                                <input type="password" 
+                                       id="password" 
+                                       name="password" 
+                                       class="form-input" 
+                                       placeholder="Enter Password" 
+                                       required 
+                                       autocomplete="new-password">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobile" class="form-label">Mobile Number <span class="required"></span></label>
+                                <input type="tel" 
+                                       id="mobile" 
+                                       name="mobile" 
+                                       class="form-input" 
+                                       placeholder="Enter Mobile Number" 
+                                       required 
+                                       autocomplete="tel">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" 
+                                       id="dob" 
+                                       name="dob" 
+                                       class="form-input" 
+                                       autocomplete="bday">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Gender <span class="required"></span></label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="male" required>
+                                    <span class="radio-custom"></span>
+                                    Male
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="female">
+                                    <span class="radio-custom"></span>
+                                    Female
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="gender" value="other">
+                                    <span class="radio-custom"></span>
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category" class="form-label">Favourite Book Category</label>
+                                <select id="category" name="category" class="form-input">
+                                    <option value="">Select Category</option>
+                                    <option value="fiction">Fiction</option>
+                                    <option value="science">Science</option>
+                                    <option value="technology">Technology</option>
+                                    <option value="education">Education</option>
+                                    <option value="biography">Biography</option>
+                                    <option value="comics">Comics</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="payment" class="form-label">Preferred Payment Method</label>
+                                <select id="payment" name="payment" class="form-input">
+                                    <option value="">Select Payment Method</option>
+                                    <option value="cod">Cash on Delivery</option>
+                                    <option value="upi">UPI</option>
+                                    <option value="credit">Credit Card</option>
+                                    <option value="debit">Debit Card</option>
+                                    <option value="netbanking">Net Banking</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="age" class="form-label">Age</label>
+                                <input type="number" 
+                                       id="age" 
+                                       name="age" 
+                                       class="form-input" 
+                                       min="10" 
+                                       max="100" 
+                                       placeholder="Enter Age">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occupation" class="form-label">Occupation</label>
+                                <input type="text" 
+                                       id="occupation" 
+                                       name="occupation" 
+                                       class="form-input" 
+                                       placeholder="Enter Occupation">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Interested Books</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="novels">
+                                    <span class="checkbox-custom"></span>
+                                    Novels
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="programming">
+                                    <span class="checkbox-custom"></span>
+                                    Programming
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="history">
+                                    <span class="checkbox-custom"></span>
+                                    History
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="sports">
+                                    <span class="checkbox-custom"></span>
+                                    Sports
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="competitive">
+                                    <span class="checkbox-custom"></span>
+                                    Competitive Exams
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profilephoto" class="form-label">Upload Profile Photo</label>
+                            <input type="file" 
+                                   id="profilephoto" 
+                                   name="profilephoto" 
+                                   class="form-input" 
+                                   accept="image/*">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea id="address" 
+                                      name="address" 
+                                      class="form-input" 
+                                      rows="4" 
+                                      placeholder="Enter Address"></textarea>
+                        </div>
+                        
+                        <div class="form-group mt-xl">
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-primary btn-lg">Register Buyer</button>
+                                <button type="reset" class="btn btn-secondary btn-lg">Reset Form</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p>Email: onlinebookstore@gmail.com</p>
+                    <p>Phone: +91 9876543210</p>
+                </div>
+                <p class="footer-copyright">&copy; 2024 Online Book Store Management System. All rights reserved.</p>
+                <p class="footer-credit">Designed and developed by <strong>@AIML-III-VIGNAN</strong></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

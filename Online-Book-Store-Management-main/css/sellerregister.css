@@ -1,0 +1,226 @@
+/*Body*/
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(to right,#eef5ff,#dcecff);
+}
+
+/*Header*/
+
+header{
+    background:#f4c2f4;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 5px 12px rgba(0,0,0,0.20);
+    transition:0.3s;
+}
+
+header:hover{
+    transform:translateY(-3px);
+}
+
+header h1{
+    margin:0;
+    color:#4f791d;
+    font-size:42px;
+}
+
+header p{
+    margin-top:8px;
+    color:white;
+    font-size:18px;
+}
+
+/*Navigation */
+
+nav{
+    background:#2f5d62;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,.20);
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#4b7bec;
+    padding:10px 18px;
+    margin:8px;
+    display:inline-block;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    background:#2d6cdf;
+    transform:translateY(-3px);
+    box-shadow:0 5px 12px rgba(0,0,0,.30);
+}
+
+/*Main*/
+
+main{
+    padding:30px 0;
+}
+
+/*Registration Card*/
+
+section{
+    width:70%;
+    margin:0 auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(0,0,0,.20);
+    transition:0.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 22px rgba(0,0,0,.28);
+}
+
+section h2{
+    color:#734606;
+    margin-bottom:25px;
+}
+
+/*Form*/
+
+form{
+    width:92%;
+    margin:auto;
+}
+
+/*Labels*/
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#444;
+}
+
+/*Inline Labels*/
+
+.inline-label{
+    display:inline;
+    font-weight:normal;
+    margin-right:18px;
+}
+
+/*Radio & Checkbox Groups*/
+
+.radio-group,
+.check-group{
+    margin-bottom:20px;
+}
+
+.radio-group input,
+.check-group input{
+    margin-left:10px;
+    margin-right:5px;
+}
+
+/*Text Fields*/
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea{
+
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border:1px solid #cccccc;
+    border-radius:6px;
+    box-sizing:border-box;
+    font-size:15px;
+    transition:0.3s;
+
+}
+
+/*File Upload*/
+
+input[type="file"]{
+    width:100%;
+    margin-bottom:20px;
+}
+
+/*Focus Effect */
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+    border-color:#4b7bec;
+    box-shadow:0 0 8px rgba(75,123,236,.45);
+
+}
+
+/*Buttons*/
+
+button{
+
+    width:100%;
+    padding:12px;
+    margin-top:12px;
+    border:none;
+    border-radius:6px;
+    background:#4b7bec;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 12px rgba(0,0,0,.20);
+
+}
+
+button:hover{
+
+    background:#2d6cdf;
+    transform:translateY(-3px);
+    box-shadow:0 8px 16px rgba(0,0,0,.30);
+
+}
+
+/* Reset Button */
+
+button[type="reset"]{
+
+    background:#777;
+
+}
+
+button[type="reset"]:hover{
+
+    background:#555;
+
+}
+
+/*Footer */
+
+footer{
+
+    margin-top:30px;
+    background:#cfe7cf;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 -2px 8px rgba(0,0,0,.20);
+
+}
+
+footer p{
+
+    margin:0;
+    font-size:15px;
+
+}
